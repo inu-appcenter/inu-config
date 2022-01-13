@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+
+token:
+  expiration_time: 86400000
+  secret: '{cipher}AQBgmVtpRYkdyYzn9PBOZSLXsKaox2anQgHciYi0eaxHNZWujHuDfHEz48luGDM3ttgVTKpgokaGWGSM0GS/pYHpIIuGqSP8liRkpO7ZvOoIyoQgLgogXOcOx8htO+jRR4WSxSV7Epunf/wpYsI3pwy6ShayCN1ussv3Pog9XOeIH06+wHrOOeqoSvHL/fhsUbE7RWLqxLeJ5eBzZ4HNKU9O6zw/IS0cv6NyfM4wPxxF18G86MQB9H+EY8xD13lmn9i2INL6vLOUVCVz89BaZeBea3Lj2NpZfmpiO9VvEnB9LS0pbTuCnz1BgKqvRu19O2CBxjKClMyFKX50UjDTQrUVK7k8wFi7mWMti+tKdDlMLoba0YRgE7TGconYWW1czkQ='
+
+cloud:
+  aws:
+    credentials:
+      accessKey: '{cipher}AQCpySykq1mtgk+ybgifHIeAP6kfIHC0a/xpcTB4+puFOemHlFPNmXOQZsX6cJgzhRUbd72kFgSbqZ+wYu+dp0CN50Y1U7ipI3Hp78NI6dWN5Xg+xSwDY43qkrihI+Knv6o4Pt43JP5ifxBaGV7kPQzQqzFuDnmUfxfW+nW0Wi1oZYT//bCICMJPZFmSiZEV+7pgy/uD4pjkrAzlTYXn0FNH9u9PguaEURi07ANG6JWEg03z3hGEPT9qjVRm5F48lyRqa/FSGHXfOucbTwtIBNKM1/2vChy8LD1hBOHldfuR+zU3ZasmxdpByCGWvvQmeFOSobmLQUvNnSH5lS0Hk7Tc7ithThBoIGOZnlOcwr4A2It/jGEg38T+Hth4CUaEyW8Zb6Z1CxfhqDy8r0W0SfTP'
+      secretKey: '{cipher}AQCNb03jwk0pb1YQlRYrz8XOWFLi55Mp65i+gtPW4zeaxCr7E4fqGm3dgBFCkfj9QzUBwp7aHmmtRIbxijm8JcfS4Fa9wCz5Kt65h0rTZ6+M8QEOjM4d7624a9e9twF8R1T+diKs1ZEbdnpNa+zDIDQyoJH7agtYadpYIJoxnTRbe7p3fHPkxBuCWS4YUr2OX14yT1Lc7XgZ5yy00FZUNqeEZluZBpaEaxXihAm65euYls2MeUwL0bi76up+dqB0k7jT8SqcliusHle0nnxqi7YSrb9JVSsA8m5w18ZkQ4hpHwvVIw7rY+ONftw4qI/XYt7zsfRM44vgY9rhRxJB/8vJcvA3WNmtmQo0Cp5MqP2Qffos6+PtnGbXXLhJrn1j7gYb0tSuu1axV2U/t1/JShXiY2OTWcivCNpGADhEAXCgtA=='
+    s3:
+      bucket: inu-market
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
